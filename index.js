@@ -14,7 +14,7 @@ app.use(logRequest("task.txt"));
 
 connect("mongodb://localhost:27017/youtubeApp");
 
-app.use("/users", userRouter);
+app.use("/api/users", userRouter);
 
 app.listen(port, () => {
   console.log(`app listening at http://localhost:${port}`);
